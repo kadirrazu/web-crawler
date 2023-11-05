@@ -1,0 +1,7 @@
+<?php
+
+include('simple_html_dom.php');
+
+$html = file_get_html('http://www.domain.co.uk/page.php');
+
+$result = $html->find('#sidebar-bgbtm', 0)->outertext;
